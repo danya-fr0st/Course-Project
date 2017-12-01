@@ -34,24 +34,6 @@ registers saver_registers::mov_reg(const std::string &in, const std::string &out
 	return return_reg_by_string(in);
 }
 
-/*registers saver_registers::mov_reg(const std::string &in, int out) {
-if (out >= -128 && out <= 127) {
-return_reg_by_string(in).return_byte(3) = out;
-}
-else if (out >= -32768 && out <= 32767) {
-byte<2> tmp = out;
-return_reg_by_string(in).return_byte(3) = 256;
-return_reg_by_string(in).return_byte(2) = out - 256;
-}
-else if (out >= -8388608 && out <= 8388607) {
-
-}
-else if (out >= -214748368 && out <= 2147483647) {
-
-}
-return return_reg_by_string(in);
-}*/
-
 byte saver_registers::mov(const std::string &in, const std::string &out) 
 {
 	return_by_string(in) = return_by_string(out);
