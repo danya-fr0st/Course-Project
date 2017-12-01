@@ -13,15 +13,4 @@ int main()
 		system("pause");
 	}
 
-	
-		/*byte a(2);
-		byte b(5);
-		a += b;
-		std::cout << a << std::endl;*/
-	
-	
-
-	
-
-
 }
